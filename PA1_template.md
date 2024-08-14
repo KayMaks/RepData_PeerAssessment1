@@ -76,9 +76,7 @@ total <- activity %>%
 
 
 ``` r
-hist(total$steps, 
-      main = "Total Steps Taken Each Day", 
-      xlab = "Number of Steps", 
+hist(total$steps, main = "Total Steps Taken Per Day", xlab = "Number of Steps", 
       ylab = "Frequency", 
 )
 ```
@@ -159,7 +157,9 @@ totalNew <- activityNew %>%
 Then, we can make the histogram:
 
 ``` r
-hist(totalNew$steps)
+hist(totalNew$steps, main = "Total Steps Taken Per Day", xlab = "Number of Steps", 
+      ylab = "Frequency", 
+)
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
@@ -204,7 +204,7 @@ ave_activity2 <- activity2 %>%
 ``` r
 xyplot(steps ~ interval | factor(day), data = ave_activity2, aspect = 1/2, 
     type = "l", xlab = "5-minute Interval", ylab = "Average Number of Steps",
-    main = "Average Number of Steps per 5-minute Interval over Weekends and Weekdays")
+    main = "Average Number of Steps Per 5-minute Interval")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->

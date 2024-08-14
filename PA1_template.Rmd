@@ -38,9 +38,7 @@ total <- activity %>%
 ### Make a histogram of the total number of steps taken per day
 
 ```{r echo=TRUE}
-hist(total$steps, 
-      main = "Total Steps Taken Each Day", 
-      xlab = "Number of Steps", 
+hist(total$steps, main = "Total Steps Taken Per Day", xlab = "Number of Steps", 
       ylab = "Frequency", 
 )
 ```
@@ -102,7 +100,9 @@ totalNew <- activityNew %>%
 
 Then, we can make the histogram:
 ```{r echo=TRUE}
-hist(totalNew$steps)
+hist(totalNew$steps, main = "Total Steps Taken Per Day", xlab = "Number of Steps", 
+      ylab = "Frequency", 
+)
 ```
 
 Lastly, we can get the mean and median of the new data set:
@@ -134,5 +134,5 @@ ave_activity2 <- activity2 %>%
         summarise(steps = mean(steps, na.rm = TRUE))
 xyplot(steps ~ interval | factor(day), data = ave_activity2, aspect = 1/2, 
     type = "l", xlab = "5-minute Interval", ylab = "Average Number of Steps",
-    main = "Average Number of Steps per 5-minute Interval over Weekends and Weekdays")
+    main = "Average Number of Steps Per 5-minute Interval")
 ```
