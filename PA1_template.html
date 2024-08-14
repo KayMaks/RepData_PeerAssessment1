@@ -358,7 +358,8 @@ display: none;
 <h2>Loading and preprocessing the data</h2>
 <div id="load-the-necessary-packages-and-the-data-into-a-data-set" class="section level3">
 <h3>Load the necessary packages and the data into a data set:</h3>
-<pre class="r"><code>library(dplyr)</code></pre>
+<pre class="r"><code>library(knitr)
+library(dplyr)</code></pre>
 <pre><code>## 
 ## Attaching package: &#39;dplyr&#39;</code></pre>
 <pre><code>## The following objects are masked from &#39;package:stats&#39;:
@@ -375,7 +376,6 @@ library(lubridate)</code></pre>
 ## 
 ##     date, intersect, setdiff, union</code></pre>
 <pre class="r"><code>library(lattice)
-library(knitr)
 activity &lt;- read.csv(&quot;activity.csv&quot;)</code></pre>
 </div>
 <div id="processtransform-the-data-if-necessary-into-a-format-suitable-for-your-analysis" class="section level3">

@@ -1,7 +1,7 @@
 ---
 title: "Reproducible Research: Peer Assessment 1"
 output: 
-  html_document:
+  html_document: 
     keep_md: true
 ---
 
@@ -11,6 +11,7 @@ output:
 
 
 ``` r
+library(knitr)
 library(dplyr)
 ```
 
@@ -49,7 +50,6 @@ library(lubridate)
 
 ``` r
 library(lattice)
-library(knitr)
 activity <- read.csv("activity.csv")
 ```
 
