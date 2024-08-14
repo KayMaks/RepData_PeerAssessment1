@@ -7,7 +7,7 @@ output:
 
 
 ## Loading and preprocessing the data
-### Load the necessary packages and the data into a data set:
+### Load the necessary packages and the data into a data set
 
 
 ``` r
@@ -63,7 +63,7 @@ activity <- activity %>%
 
 
 ## What is mean total number of steps taken per day?
-### Calculate the total number of steps taken per day:
+### Calculate the total number of steps taken per day
 
 
 ``` r
@@ -72,7 +72,7 @@ total <- activity %>%
         summarize(steps = sum(steps))
 ```
 
-### Make a histogram of the total number of steps taken per day:
+### Make a histogram of the total number of steps taken per day
 
 
 ``` r
@@ -85,7 +85,7 @@ hist(total$steps,
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
-### Calculate and report the mean and median of the total number of steps per day 
+### Calculate and report the mean and median of the total number of steps per day
 
 
 ``` r
@@ -148,7 +148,7 @@ for(i in 1:ncol(activityNew)){
 
 ### Make a histogram of the total number of steps taken each day and Calculate and report the mean and median total number of steps taken per day
 
-First, we need to group and sum up the different groups of data
+First, we need to group and sum up the different groups of data:
 
 ``` r
 totalNew <- activityNew %>%
@@ -156,7 +156,7 @@ totalNew <- activityNew %>%
         summarize(steps = sum(steps))
 ```
 
-Then, we can make the histogram
+Then, we can make the histogram:
 
 ``` r
 hist(totalNew$steps)
@@ -164,7 +164,7 @@ hist(totalNew$steps)
 
 ![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
 
-Lastly, we can get the mean and median of the new data set
+Lastly, we can get the mean and median of the new data set:
 
 ``` r
 mean_narm <- mean(totalNew$steps)
