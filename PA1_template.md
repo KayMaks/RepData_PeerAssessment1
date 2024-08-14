@@ -203,7 +203,8 @@ ave_activity2 <- activity2 %>%
 
 ``` r
 xyplot(steps ~ interval | factor(day), data = ave_activity2, aspect = 1/2, 
-    type = "l")
+    type = "l", xlab = "5-minute Interval", ylab = "Average Number of Steps",
+    main = "Average Number of Steps per 5-minute Interval over Weekends and Weekdays")
 ```
 
 ![](PA1_template_files/figure-html/unnamed-chunk-14-1.png)<!-- -->
